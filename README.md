@@ -12,8 +12,8 @@ To install the most recent version, run the following command.
 Alternatively, you may edit your composer.son directly by adding the following
 to the require section.
 ```
-“require”: {
-    “danvuquoc/laravel-kraken”: “1.*”,
+"require": {
+    "danvuquoc/laravel-kraken": "1.*",
 }
 ```
 
@@ -23,7 +23,7 @@ to the require section.
 Register the service provider in `config/app.php` by inserting it into the
 providers array:
 ```
-‘providers’ => [
+'providers' => [
     ...
     Danvuquoc\Kraken\KrakenServiceProvider::class,
     ...
@@ -34,12 +34,12 @@ Running the following command will publish `config/kraken.php` to your config
 folder. In this file you will need to insert your api key and api secret.
 
 `$ php artisan vendor:publish
-—provider=“Danvuquoc\\Kraken\\KrakenServiceProvider"`
+—provider="Danvuquoc\Kraken\KrakenServiceProvider"`
 
 ### Facade
 Register the facade in `config/app.php` by inserting it into the aliases array:
 ```
-‘aliases’ => [
+'aliases' => [
     ...
     'KrakenIO' => Danvuquoc\Kraken\KrakenFacade::class,
     ...
@@ -51,8 +51,8 @@ Be sure to `use KrakenIO;` in your code
 Then you can simply:
 ```
 $response = KrakenIO::url([
-    ‘url’ => ‘http://url-to-image.com/file.jpg”,
-    ‘wait’ => true,
+    'url' => 'http://url-to-image.com/file.jpg',
+    'wait' => true,
 ]);
 ```
 
