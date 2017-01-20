@@ -4,7 +4,7 @@
   "keywords": ["laravel", "kraken"],
   "license": "MIT",
   "require": {
-    "laravel/framework": "5.0 - 5.3",
+    "laravel/framework": "5.0 - 5.4",
     "kraken-io/kraken-php": "^1.1"
   },
   "autoload": {
