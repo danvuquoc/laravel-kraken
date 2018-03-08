@@ -18,7 +18,15 @@ to the require section.
 ```
 
 ## Integration in Laravel
+### Publish Configuration File
+Running the following command will publish `config/kraken.php` to your config
+folder. In this file you will need to insert your api key and api secret.
+
+`$ php artisan vendor:publish
+—provider="Danvuquoc\Kraken\KrakenServiceProvider"`
+
 ### Providers
+_This is only applicable to versions prior to Laravel 5.5, [Automatic Package Discovery](https://laravel.com/docs/packages#package-discovery) is enabled for Laravel 5.5 and above._
 
 Register the service provider in `config/app.php` by inserting it into the
 providers array:
@@ -29,14 +37,11 @@ providers array:
     ...
 ]
 ```
-### Publish Configuration File
-Running the following command will publish `config/kraken.php` to your config
-folder. In this file you will need to insert your api key and api secret.
 
-`$ php artisan vendor:publish
-—provider="Danvuquoc\Kraken\KrakenServiceProvider"`
 
 ### Facade
+_This is only applicable to versions prior to Laravel 5.5, [Automatic Package Discovery](https://laravel.com/docs/packages#package-discovery) is enabled for Laravel 5.5 and above._
+
 Register the facade in `config/app.php` by inserting it into the aliases array:
 ```
 'aliases' => [
