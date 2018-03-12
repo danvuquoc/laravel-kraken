@@ -14,7 +14,9 @@ class KrakenServiceProvider extends ServiceProvider
     protected $defer = false;
 
     /**
-     * Set up the publishing of configuration
+     * Perform post-registration booting of services.
+     *
+     * @return void
      */
     public function boot()
     {

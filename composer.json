@@ -9,7 +9,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Danvuquoc\\Kraken\\": "src/"
+      "Danvuquoc\\Kraken\\": "src/",
+      "Danvuquoc\\Kraken\\Tests\\": "tests/"
     }
   },
   "extra": {
@@ -21,5 +22,8 @@
                 "KrakenIO": "Danvuquoc\\Kraken\\KrakenFacade"
             }
         }
-    }
+    },
+  "require-dev": {
+    "orchestra/testbench": "~3.0"
+  }
 }
