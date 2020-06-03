@@ -3,6 +3,10 @@
   "description": "A minimal service provider to set up and use the Kraken API PHP library in Laravel 5",
   "keywords": ["laravel", "kraken"],
   "license": "MIT",
+  "repositories":[
+      "type": "vcs"
+      "url": "https://github.com/sofa-digital/kraken-php"
+    ],
   "require": {
     "laravel/framework": "5.0 - 5.8",
     "kraken-io/kraken-php": "^1.6"
