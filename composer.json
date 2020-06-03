@@ -4,8 +4,7 @@
   "keywords": ["laravel", "kraken"],
   "license": "MIT",
   "repositories":[
-      "type": "vcs"
-      "url": "https://github.com/sofa-digital/kraken-php"
+    {"type": "vcs", "url": "https://github.com/sofa-digital/kraken-php" }
     ],
   "require": {
     "laravel/framework": "5.0 - 5.8",
